@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/fe6aba9d11.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+
+    <title>MOBIK</title>
+</head>
+<body id="home">
+
+<!-- ====================== Navbar ====================== -->
+<div class="Navbar">
+  
+  <div class="Navbar__Link Navbar__Link-brand">   
+    <div class="Navbar__Link"><img src="img/mobik-logo.jpg" alt="logo"/></div>
+    <div class="Navbar__Link Navbar-brand-name"><strong>M o B i K</strong></div>
+    <i class="fas fa-mobile-alt fa-2x"></i>+40 723 250 949 
+  </div>
+
+  <!-- hamburger-btn -->
+  <div class="Navbar__Link Navbar__Link-toggle">
+      <div class="icon-bars"></div>
+      <div class="icon-bars"></div>
+      <div class="icon-bars"></div>
+  </div>
+
+  <nav class="Navbar__Items Navbar__Items--right">
+    <a class="Navbar__Link" href="#about">Cine suntem</a>
+    <a class="Navbar__Link" href="#services">Produse <span class="sr-only">(current)</span></a>
+    <a class="Navbar__Link" href="#home">Acasa</a>
+  </nav>  
+
+</div>
+
+
+    <!-- ====================== Section-a: Prezentarea generala ====================== -->
+    <section class="section-a">
+      <div class="overlay">
+        <div class="section-a-inner">
+          <h3 class="text-5"">_ M o B i K _</h3>
+          <h2 class="text-2">DIN PASIUNE PENTRU DESIGN SI AMENAJARI INTERIOARE</h2>
+          <h3 class="text-5">MOBILIER PENTRU CASA SI BIROU</h3>
+          <p>Piese unicat, la comanda, pret accesibil.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================== Section-b - Despre noi ====================== -->
+    <section id="about" class="section-b mt-5">
+        <div class="container">
+            <div>
+                <h1>_ M o B i K _ <br>PRODUCEM MOBILIER STILIZAT SI ADAPTAT CERINTELOR CLIENTULUI</h1>
+                <p>                    
+                    Avand o EXPERIENTA de peste 15 ani in domeniul mobilierului pentru casa si birou, ne preocupam continuu pentru a crea MOBILIER UNICAT, adaptat spatiului si cerintelor clientului.
+                    <br>
+                    Prioritatea noastra este pastrarea unui standard ridicat de CALITATE pentru produsele si serviciile oferite.
+                    <br>
+                    ASIGURAM CALITATEA prin grija fata de detalii si nevoile clientului, precum si prin folosirea de materiale cu un bun raport calitate-pret. 
+                </p>
+                <a href="#services" class="btn product-button">Produse</a>
+            </div>
+            <img src="img/about.jpeg" alt="About" />
+        </div>
+    </section>
+
+
+  <!-- ====================== Section-c - Services ===================-->
+  <section class="section-c" id="services">
+    <div class="container">
+      
+      <!-- div care introduce Produsele noastre -->
+      <div class="section-c-first2Elements">
+          <div class="grid-element-invisible"></div>
+          <div class="grid-element-visible">
+            <h2 class="text-center mt-0">Produsele noastre</h2>
+            <hr>
+          </div>
+          <div class="grid-element-invisible"></div>
+      </div>      
+      
+      <!-- div care contine alte div uri cu anchor tag urile pe care sa dau clk -->
+      <div class="row">
+        <div class="photos" >
+              <a href="#slider" id="1" onClick="reply_click(this.id)"><img class="photo" data-src="img/buc/buc-43.jpg" alt="bucatarii">
+                <div class="desc"><h3>Bucatarii</h3></div>
+              </a>
+        </div>
+        <div class="photos" >
+            <a href="#slider" id="2" onClick="reply_click(this.id)"><img class="photo" data-src="img/dor/dor-35.jpg" alt="dormitoare">
+              <div class="desc"><h3>Dormitoare</h3></div>
+            </a>
+        </div>
+        <div class="photos" >
+            <a href="#slider" id="3" onClick="reply_click(this.id)"><img class="photo" data-src="img/liv/liv-4.jpg" alt="living">
+              <div class="desc"><h3>Living</h3></div>
+            </a>
+        </div>
+        <div class="photos" >
+              <a href="#slider" id="4" onClick="reply_click(this.id)"><img class="photo" data-src="img/bth/bth-3.jpg" alt="baie">
+                <div class="desc"><h3>Baie</h3></div>
+              </a>
+        </div>
+        <div class="photos" >
+            <a href="#slider" id="5" onClick="reply_click(this.id)"><img class="photo" data-src="img/com/com-8.jpg" alt="birouri">
+              <div class="desc"><h3>Birouri/<br>Comercial</h3></div>
+            </a>
+        </div>
+        <div class="photos" >
+            <a href="#slider" id="6" onClick="reply_click(this.id)"><img class="photo" data-src="img/oth/oth-12.jpg" alt="alte tipuri">
+              <div class="desc"><h3>Alte tipuri</h3></div>
+            </a>
+        </div>
+      </div>
+
+      <!-- div care contine btn Acasa -->
+      <div class="section-c-first2Elements">
+          <div class="grid-element-invisible"></div>
+          <div class="grid-element-visible">
+              <a href="#home" class="btn home-button">Acasa</a>
+          </div>
+          <div class="grid-element-invisible"></div>
+      </div> 
+
+    </div>  <!-- sfarsit  div class="container"-->
+  </section>
+
+
+  <!-- ====================== Section-d - Gallery ====================== -->
+
+<section> 
+  <div class="wrap">
+  
+  <!-- Se defineste div ul (si id ul sau) care va contine fotografii pe clase -->
+  <div class="slideshow-container" id="slider"> 
+             
+    <!-- Pozele din clasa: cls1 = buc -->
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-3.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-5.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-6.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-8.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-9.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-10.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-11.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-12.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-13.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-14.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-15.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-16.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-17.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-18.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-19.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-20.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-21.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-22.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-23.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-24.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-25.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-26.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-27.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-28.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-29.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-30.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-31.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-32.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-33.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-34.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-35.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-36.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-37.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-38.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-39.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-40.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-41.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-42.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-43.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-44.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-45.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-46.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-47.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-48.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-49.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-50.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-51.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-52.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-53.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/buc/buc-54.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls1 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/buc/buc-55.jpg" alt="">
+      </div>
+    </div>
+    <!-- **************************** -->
+
+    <!-- Pozele din clasa: cls2 = dor -->
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-1.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-2.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-3.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-4.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-5.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-6.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-7.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-8.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-9.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-10.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-11.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-12.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-13.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-14.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-15.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-16.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-17.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-18.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-19.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-20.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-21.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-22.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-23.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-24.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-25.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-26.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-27.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-28.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-29.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-30.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-31.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-32.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-33.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-34.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-35.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-36.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/dor/dor-37.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="cls2 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/dor/dor-38.jpg" alt="">
+      </div>
+    </div>
+<!-- **************************** -->
+
+ <!-- Pozele din clasa: cls3 = liv -->
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/liv/liv-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/liv/liv-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-5.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/liv/liv-6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/liv/liv-7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-8.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-9.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls3 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/liv/liv-10.jpg" alt="">
+      </div>
+    </div>
+
+<!-- **************************** -->
+  
+ <!-- Pozele din clasa: cls4 = bth -->
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/bth/bth-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-5.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/bth/bth-8.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/bth/bth-9.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls4 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/bth/bth-10.jpg" alt="">
+      </div>
+    </div>
+
+  <!-- **************************** -->
+
+    <!-- Pozele din clasa: cls5 = com -->
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/com/com-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-5.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/com/com-7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/com/com-8.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls5 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/com/com-9.jpg" alt="">
+      </div>
+    </div>
+
+<!-- **************************** -->
+
+    <!-- Pozele din clasa: cls6 = oth -->
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-5.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-8.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-9.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-10.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-11.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-12.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-13.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-14.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-15.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-16.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo landscape" data-src="img/oth/oth-17.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-18.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="cls6 mySlides slide">
+      <div class="slide-content">
+        <img class="photo portrait" data-src="img/oth/oth-19.jpg" alt="">
+      </div>
+    </div>
+
+<!-- **************************** -->
+
+  </div> 
+  
+  <!-- Vezi ca div ul cu arrow left nu merge daca l pun inaintea div ului #slider pt ca se citeste inainte de a incarca pozele si nu va merge! -->
+  <div id="arrow-left" class="arrow"></div>
+  <div id="arrow-right" class="arrow"></div>
+
+    <!-- Butoane pt: revenire la Services, resp, Inchide div fotografii -->
+  <div style="text-align:center">          
+    <!-- <a href="#services" class="btn services-back-button" onclick="closeSlider()" style="background-color: #555">Servicii</a>  -->
+    <a href="#services" class="btn services-back-button" onclick="closeSlider()" style="background-color: #555">Inchide</a> 
+  </div>
+
+  </div> 
+</section>
+
+    <!--  Modal section -->
+
+    <!-- Modal pentru CONFIDENTIALITATE -->
+    <!-- !!!!!Problema de rezolvat: modalul de termeni nu se inchide cu clk in afara ferestrei, desi cel de Confid merge. !!!!!!-->
+    <div id="id-modal-confid" class="modal-confid">
+      <div class="modal2-content">
+        <span class="inchide">&times;</span>
+          <h1>Confidentialitate</h1>  
+          <p>Ultima actualizare: Noiembrie 03, 2019</p> 
+          <p>
+            In cadrul acestei sectiuni, partile vor fi numite: furnizor de servicii (adica SC MOBIK SRL), numit in continuare FURNIZOR, pe de o parte, iar pe de alta parte, beneficiarul va fi numit in continuare CLIENT. 
+          </p>
+          <p>
+            Va rugam sa consultati informatiile din prezentul document deoarece acesta exprima politica agentului economic SC MOBIK SRL cu privire la prelucrarea datelor cu caracter personal.
+            <hr>In cadrul SC MOBIK SRL SRL prelucram datele cu caracter personal exclusiv in cadrul dispozitiilor legale cu privire la protectia datelor cu caracter personal (vezi Punctul 4 - Baza legala).
+            Expresii/termeni utilizati:
+            <hr>* Operator = Operatorul responsabil pentru prelucrarea datelor in sensul Regulamentului GDPR este SC MOBIK SRL S.R.L., firma cu capital privat, inmatriculata la Registrul Comertului cu Nr. _____________, cod fiscal RO ___________ si sediul social in str. _________________________________________, denumit in continuare "FURNIZORUL" sau "SC MOBIK SRL".
+            <hr>* Categorii de date prelucrate = Datele cu caracter personal (prenumele, numele, data nasterii, adresa, nr. de telefon si adresa de e-mail etc.) sunt prelucrate de catre noi doar in situatia in care introduceti aceste date intr-o rubrica de pe site sau ni le transmiteti prin e-mail.
+            <hr>* Prelucrarea datelor personale inseamna orice operatiune sau set de operatiuni efectuate asupra datelor cu caracter personal sau asupra seturilor de date cu caracter personal, cu sau fara utilizarea de mijloace automate, cum ar fi colectarea, inregistrarea, organizarea, structurarea, stocarea, adaptarea sau modificarea, extragerea, consultarea, utilizarea, divulgarea prin transmitere, diseminarea sau punerea la dispozitie in orice alt mod, alinierea sau combinarea, restrictionarea, stergerea sau distrugerea.
+          </p>
+          <p>
+            1. SCOPURILE SI TEMEIUL JURIDIC AL PRELUCRARII DATELOR DVS.:
+            <hr>Conform Regulamentului (UE) 2016/679 si a legislatiei conexe, scopurile pentru care prelucram datele dumneavoastra personale vizeaza strict relatia dintre SC MOBIK SRL si CLIENT. Informatiile pe care ni le furnizati sunt tratate cu maxima confidentialitate si exclusiv in scopurile pentru care au fost colectate.
+            <hr>Datele cu caracter personal stocate vor fi utilizate in scopul derularii contractelor si procesarii solicitarilor dumneavoastra. Ulterior finalizarii derularii contractului sau solicitarii dumneavoastra, datele dumneavoastra sunt salvate tinand cont de termenele de pastrare conform legislatiei fiscale si comerciale si acolo unde este cazul pe o durata necesara pentru protejarea drepturilor FURNIZORULUI.
+          </p>
+          <p>
+            2. DREPTURILE DVS. IN CALITATE DE PERSOANA VIZATA CU PRIVIRE LA PRELUCRAREA DATELOR CU CARACTER PERSONAL FURNIZATE:
+            <hr>Potrivit Regulamentului GDPR, in calitate de persoana vizata beneficiati de un cumul de drepturi, respectiv:
+            <hr>a. Dreptul la informare si acces la date cu caracter personal: dreptul de a obtine o confirmare a faptului ca se prelucreaza sau nu date cu caracter personal care va privesc si, in caz afirmativ, acces la datele respective.
+            <hr>b. Dreptul la rectificare: dreptul de a solicita Operatorului si de a obtine, fara intarzieri nejustificate, rectificarea datelor cu caracter personal inexacte care va privesc si/sau de a obtine completarea datelor cu caracter personal care sunt incomplete, cu mentiunea ca in cazul unui cont online aceste modificari le puteti efectua personal din sectiunea de editare a datelor contului.
+            <hr>c. Dreptul la stergerea datelor ("dreptul de a fi uitat"): dreptul de a obtine stergerea datelor cu caracter personal care va privesc, fara intarzieri nejustificate, in cazul in care se aplica anumite motive mentionate in Regulamentul GDPR.
+            <hr>d. Dreptul la restrictionarea prelucrarii: dreptul de a obtine restrictionarea prelucrarii in anumite cazuri.
+            <hr>e. Dreptul la portabilitatea datelor: dreptul de a primi datele cu caracter personal care va privesc si de a le transmite catre un al operator.
+            <hr>f. Dreptul la opozitie: dreptul de a va opune in orice moment prelucrarii datelor cu caracter personal care va privesc, in conditiile Regulamentului GDPR.
+            <hr>g. Dreptul de a nu face obiectul unei decizii bazate exclusiv pe prelucrarea automata, inclusiv crearea de profiluri, care produce efecte juridice care va privesc sau va afecteaza in mod similar intr-o masura semnificativa.
+            <hr>h. Dreptul sa va adresati printr-o plangere Autoritatii Nationale de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) in situatia in care considerati ca datele dumneavoastra nu au fost prelucrate in conformitate cu prevederile legale.
+            <hr>➢ Cum va puteti exercita aceste drepturi?
+            <hr>Pentru exercitarea drepturilor mentionate mai sus, va rugam sa va adresati prin cerere scrisa, datata si semnata la adresa postala a FURNIZORULUI, mentionata in SITE.
+            <hr>➢ In cat timp raspundem solicitarilor transmise de dumneavoastra?
+            <hr>In termen de cel mult o luna, calculat de la primirea cererii dumneavoastra, vi se vor furniza informatii privind actiunile intreprinse sau, acolo unde este cazul, privind motivele pentru care nu pot fi luate masurile solicitate.
+            <hr>Nota: Va rugam sa aveti in vedere faptul ca pentru a da curs unei cereri de acces la date cu caracter personal vom lua toate masurile rezonabile pentru a verifica identitatea persoanei vizate.
+            <hr>De asemenea, conform Regulamentului GDPR, termenul de raspuns mentionat mai sus poate fi prelungit cu cel mult doua luni in situatia in care este necesar, tinandu-se cont de complexitate sau alte situatii deosebite, urmand sa va informam cu privire la acest aspect, daca va fi cazul.
+          </p>
+          <p>
+          3. DESTINATARII SAU CATEGORIILE DE DESTINATARI AI DATELOR CU CARACTER PERSONAL:
+
+          <hr>3.1. Transmiterea datelor in scopul procesarii comenzilor
+          Datele cu caracter personal stocate de SC MOBIK SRL sunt transmise colaboratorilor nostri in scopul finalizarii/livrarii comenzilor. Spre exemplu, vor fi transmise datele dumneavoastra catre firmele de curierat, in cazul in care optati pentru livrarea comenzii prin curier.
+
+          <hr>3.2. Transmitere catre institutii publice, instante de judecata, precum si autoritati competente sa cerceteze savarsirea faptelor penale
+          In cazuri speciale, atunci cand se impune acest lucru prin lege, compania SC MOBIK SRL poate sa ofere institutiilor competente informatii cu privire la date cu caracter personal.
+
+          <hr>3.3. Plugin-uri de retele sociale
+          Pagina noastra de internet utilizeaza "plugin-uri" de la operatorii de retele sociale (de ex.: www.facebook.com). Toate plugin-urile de retele sociale de pe pagina noastra de internet sunt marcate clar si distinct.
+        </p>
+        <p>
+          4. BAZA LEGALA
+          <hr>Pentru si mai multe detalii puteti consulta baza legala:
+          <hr>* Regulamentul (UE) 2016/679 privind protectia persoanelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si privind libera circulatie a acestor date si de abrogare a Directivei 95/46/CE (Regulamentul general privind protectia datelor) (accesibil la http://dataprotection.ro/?page=Regulamentul_nr_679_2016 ).
+          <hr>* Legea nr. 506/2004 privind prelucrarea datelor cu caracter personal si protectia vietii private in sectorul comunicatiilor electronice. 
+        </p>
+
+      </div>
+    </div>
+    <!-- FINAL MODAL CONFIDENTIALITATE -->
+    
+
+    <!-- Modal pentru TERMENI SI CONDITII -->
+    <div id="id-modal-termeni" class="modal-termeni">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <h1>Termeni si conditii ("Termeni")</h1>
+          <p>Ultima actualizare: Noiembrie 03, 2019</p>
+          <p>Va rugam sa cititi cu atentie Termenii, inainte de a utiliza acest SITE.</p>
+          <p>
+            Termenii si conditiile acestui SITE sunt exprimate in conformitate cu Ordonanta de urgenta nr. 34/2014 din 04/06/2014 privind drepturile consumatorilor in cadrul contractelor incheiate cu profesionistii, precum si pentru modificarea si completarea unor acte normative.
+          </p>
+          <p>
+            Prin accesarea si folosirea acestui SITE, dumneavoastra sunteti de acord cu Termenii si Politica lui de confidentialitate (vezi sectiunea Confidentialitate).
+          </p>
+            In cadrul acestei sectiuni, partile vor fi numite: furnizor de servicii (adica SC MOBIK SRL), numit in continuare FURNIZOR, pe de o parte, iar pe de alta parte, beneficiarul va fi numit in continuare CLIENT. 
+          <p>
+          </p>
+
+          <h2>1. Continutul</h2>
+          <p>
+            CONTINUTUL se refera la orice informatie vizuala sau scrisa aflata pe SITE.
+            Imaginile folosite si textele de pe SITE au caracter informativ si pot varia sau diferi ocazional fata de caracteristicile produselor prezentate. FURNIZORUL nu isi asuma responsabilitatea pentru eventuala neconcordanta dintre produse si pozele acestora furnizate online.
+            CONTINUTUL este exclusiv cu titlu de prezentare si nu reprezinta o obligatie contractuala a FURNIZORULUI.
+          </p>
+
+          <h2>2. Comenzi</h2>
+          <p>
+            SITE-ul nu permite plasarea de comenzi online.
+            Comenzile se stabilesc in urma discutiilor dintre CLIENT si FURNIZOR, iar conditiile concrete de executie, livrare si plata vor fi stabilite printr-un contract
+            scris, incheiat intre parti. 
+          </p>
+      </div>
+    </div>
+    <!-- FINAL MODAL TERMENI -->
+
+    <!-- MOdal pentru DISCLAIMER -->
+    <div id="id-modal-disclaimer" class="modal-disclaimer">
+      <div class="modal3-content">
+        <span class="inchide3">&times;</span>
+          <h1>Declinarea responsabilitatii</h1>
+          <p>Aceasta Declaratie privind Declinarea responsabilitatii (&quot;Disclaimer&quot;, &quot;Negatie&quot;) reprezinta o intelegere intre Operatorului Website-ului (&quot;Website Operator&quot;, &quot;noi&quot;, &quot;noua&quot; sau &quot;al nostru&quot;) si tine (&quot;Utilizator&quot;, &quot;tu&quot; sau &quot;al tau&quot;). Aceasta Declinare a responsabilitatii cuprinde liniile generale, termenii si conditiile in care tu folosesti Website-ul <a target="_blank" rel="nofollow" href="http://mariusgatej@towersbit.com">mariusgatej@towersbit.com</a> si oricare dintre produsele sau serviciile din acesta (&quot;Website&quot; sau &quot;Servicii&quot;, inclusiv).</p>
+          <h2>Prezentarea</h2>
+          <p>Toate imaginile sau opiniile reprezentate in acest Website sunt cu titlu personal si apartin in intregime si numai Operatorului Website-ului si nu le reprezinta pe acelea ale persoanelor, institutiilor sau organizatiilor cu care detinatorul poate sau nu sa fie asociat pe linie profesionala ori particulara, cu exceptia cazurilor in care se precizeaza altfel. Nicio imagine, postare sau opinie nu intentioneaza sa aduca atingere religiei, grupurilor etnice, organizatiilor, companiilor ori individului.</p>
+          <h2>Continut si Postari</h2>
+          <p>Utilizatorul poate printa/copia orice parte a acestui Website pentru uz personal sau in scop necomercial.
+          <h2>Despagubiri si Garantii</h2>
+          <p>Desi noi am facut toate incercarile pentru a ne asigura ca informatiile continute in acest Website sunt corecte, Operatorul Website-ului nu este responsabil pentru nicio eroare sau omisiune, ori pentru rezultatele obtinute din utilizarea informatiilor din acest Website. Toate informatiile din acest Website sunt furnizate &quot;asa cum apar&quot;, fara nicio garantie privind completitudinea, acuratetea, termenele sau rezultatele obtinute din utilizarea acestor informatii, si fara vreo alta garantie, expresa ori implicata. In nicio situatie, Operatorul Website-ului nu poate fi pus in vreo legatura cu vreo decizie sau actiune facute in legatura cu informatiile din acest Website ori cu vreo dauna, chiar daca Operatorul a fost avizat in vreu fel cu privire la posibilitatea producerii unor daune. Mai mult, informatiile continute de Website si oricare dintre paginile legate de acesta pot fi schimbate in orice moment si fara vreo notificare prealabila.</p>
+          <p>Ne rezervam dreptul de a modifica in orice moment aceasta Declaratie de Declinare a responsabilitatii in legatura cu Website-ul si Serviciile, prin postarea unei variante actualizate a Declaratiei de Declinare a responsabilitatii pe acest Website. Cand vom efectua actualizarea, vom proceda si la actualizarea datei din partea de jos a acestei pagini. Continuarea utilizarii Website-ul dupa oricare dintre aceste modificari/actualizari constituie consimtamantul Utilizatorului cu privire la aceste modificari. Aceasta politica privind Declinarea responsabilitatii a fost creata cu: <a style="color:inherit" target="_blank" title="Disclaimer generator" href="https://www.websitepolicies.com/disclaimer-generator">WebsitePolicies</a>.</p>
+          <h2>Acceptarea prezentei Declaratii de Declinare a responsabilitatii</h2>
+          <p>Recunoașteți că ați citit această Declaratie de Declinare a responsabilitatii si sunteti de acord cu toti termenii si toate conditiile stipulate aceasta. Prin accesarea acestui Website, sunteti sunteti de acord sa va asumati obligații în temeiul prezentei Declaratii de Declinare a responsabilitatii. Daca nu sunteti de acord sa respectati termenii din aceasta Declaratie, nu sunteti autorizat sa folositi sau sa accestai acest Website.</p>
+          <h2>Contact</h2>
+          <p>Daca doriti sa ne constactati pentru a intelege mai bine termenii din prezenta Declaratie de Declinare a responsabilitatii si daca doriti sa aflati mai multe despre acestia, puteti trimite o scrisoare la adresa Valea Voievozilor, str. Principala, nr. 500, com. Razvad, jud. Dambovita.</p>
+          <p>Acest document a fost actualizat pe data de 06.04.2020</p>
+      </div>
+    </div>
+    <!-- FINAL MODAL DISCLAIMER -->
+
+    <!-- ------------------------------------end of Modal section------------------------------------- -->
+
+
+     <!-- ====================================== F  O  O  T  E  R ==================================== -->
+
+    <footer class="section-footer">
+      <div class="container">
+
+        <div class="grid-item">
+          <h3>Comenzi si Consultanta:</h3>
+          <p>Telefon: +40 723 250 949</p>
+          <p>Adresa: Valea Voievozilor, str. Principala,<br> nr. 500, com. Razvad, jud. Dambovita</p>
+        </div>
+        
+        <div class="grid-item">
+          <h3>Ne gasesti si pe:</h3>
+          <a href="https://www.facebook.com">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+        
+        <div id="info" class="grid-item">
+          <h3>Informatii:</h3>
+          <ul>
+            <li><a id="confid" href="#info">Confidentialitate</a></li>
+            <li><a id="termeni" href="#info">Termeni si conditii</a></li>
+            <li><a id="disclaimer" href="#info">Declinarea responsabilitatii</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="h-copyright">
+      <p>&copy; 06.04.2020 | mariusgatej@towersbit.com | All Rights Reserved <p>
+    </div>
+
+
+<!-- ====================== SCRIPTs=========================================================== -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.1.0/dist/lazyload.min.js"></script>
+
+<!-- ******************* -->
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/extern.js"></script>
+
+
+<!--  Photo sources -->
+<!-- Photos from https://unsplash.com/photos -->
+
+    
+</body>
+</html>
