@@ -286,6 +286,7 @@ nav a:hover {
   height: 530px;
   /* height: auto; */
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .wrap {
