@@ -286,7 +286,7 @@ nav a:hover {
   height: 530px;
   /* height: auto; */
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */ /* Not good because it hides the slider's CLOSE button!!!*/
 }
 
 .wrap {
