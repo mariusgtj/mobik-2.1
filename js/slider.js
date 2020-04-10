@@ -1,4 +1,3 @@
-
 let slideClassName;
 function reply_click(clicked_id) {
   console.log("Btn clicked!");
@@ -24,62 +23,22 @@ function reply_click(clicked_id) {
   }
   console.log(slideClassName);
 
-//  -------------------------------Blocul 1-------------------------------------------------------------
-  // Blocul 1 - ramane in studiu. Nu am reusit sa mai deschid div ul wrap dupa ce l am inchis
-  // if (!isWrapperDisplayed) {
-  //   isWrapperDisplayed = true;
 
-  //   document.querySelector('div.wrap').style.display = 'block';
-  // }
-  // -----------------------------------------------------------------------------------------------------
-
-  // -------------------------- Blocul 2------------------------------------------------------------------
-  // Blocul 2 - functioneaza
   if (document.querySelector('div.wrap').style.display = 'none') {
     document.querySelector('div.wrap').style.display = "block";
 }
   console.log("Am deschis div ul wrap");
-  // ------------------------------------------------------------------------------------------------------
+
 
   initSlider();
   startSlide();
 }
-// Explicatii------------------------------------------------------------------------------------------------
-    // isWrapperDisplayed -> este un cuvant (?!se putea numi oricum?!) care daca este FALSE, determina ca div.wrap 
-    //sa nu fie afisat 
-
-    // initSlider() -> vezi mai jos -> face urmatoarele:
-        // Pasul 1:
-          // ascunde img curenta
-          // face ca sagetile sa fie NULL
-          // face ca sliderImages (=arr rezultat din selectia elem cu acelasi nume de clasa) sa fie NULL
-          // face ca isWrapperDisplayed = false, adica div.wrap sa nu se afiseze
-        // Pasul 2:
-          // aduce din DOM elem necesare: img, sageti, current
-          // reseteaza, apoi initiaza events pt click pe sageti:stanga-dreapta.
-
-    // startSlide() -> are 2 actiuni: 1 -> chem fc resetImg(); 2-> afis primul elem (index = [0]) dintre cele selectate.    
-// -------------------------------------------------------------------------------------------------------           
-
-
-// -------------------------------------------------------------------------------------------------------
-// Ce e mai jos solosesc cand am doar o clasa pt toate pozele, e nev doar de a selecta toate elementele cu clasa .slide:
-// let sliderImages = document.querySelectorAll(".slide"),
-//     arrowLeft = document.querySelector("#arrow-left"),
-//     arrowRight = document.querySelector("#arrow-right"),
-//     current = 0;
-// -------------------------------------------------------------------------------------------------------
-
-// `undefined` -> asa vor aparea variabilele initiate fara valoare initiala
 
 // Declar variabilele (situatia in care am mai multe clase de poze):
 let sliderImages,
 arrowLeft,
 arrowRight,
 current;
-
-// Propoz care urmeaza este in leg cu declaratia anterioara despre isWrapperDisplayed:
-// let isWrapperDisplayed = false;
 
 // Init slider
 // Mai intai verific daca exista sliderImages:
@@ -99,7 +58,6 @@ function initSlider () {
           // Obtin un arr(?!) cu foto din clasa selectata, dupa care 
           // stabilesc indexul celei pe care doresc sa o afisez 
 
-
   arrowLeft = document.querySelector("#arrow-left");
   console.log("Arrow-left selected!");
         // Functioneaza!!!
@@ -118,7 +76,6 @@ function initSlider () {
 }
 
   // FFF imp: ca si la foto, si la arrow tb sa resetez, adica sa sterg evenimentele anterioare!!!
-  // Vezi si in codul de testare initial (folderul: get-id din directorul html)
 
 //Clear previous events from memory
 function clearArrowEvents () {
