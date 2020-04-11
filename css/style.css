@@ -276,22 +276,50 @@ nav a:hover {
   /* --------------------------------Start Slide--------------------------------------------- */
 
 /* body, */
-#slider,
-.wrap,
-.slide-content {
+/* .slide-content, */
+/* #slider, */
+.wrap
+ {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 530px;
-  /* height: auto; */
+  /* height: 500px; */
+  height: auto;
   overflow-x: hidden;
-  /* overflow-y: hidden; */ /* Not good because it hides the slider's CLOSE button!!!*/
+  overflow-y: hidden;
 }
 
 .wrap {
   position: relative;
   display: none;;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Portrait */
+.mySlides img.portrait {
+  position: relative;
+  width: 300px;
+  height: 455px;
+  /* height: 500px; */
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Landscape */
+.mySlides img.landscape {
+  position: relative;
+  width: 680px;
+  height: 430px;
+  /* height: 422px; */
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .slide {
@@ -329,42 +357,15 @@ nav a:hover {
   right: 0;
   margin-right: 50px;
 }
-/* ----------------------------End Slide------------------------------------------------- */
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Portrait */
-.mySlides img.portrait {
-  position: relative;
-  width: 300px;
-  height: 500px;
-  /* height: 533px; */
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-/* Landscape */
-.mySlides img.landscape {
-  position: relative;
-  width: 680px;
-  height: 430px;
-  /* height: 422px; */
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 
 a.services-back-button {
   color: #fff;
   border: 1px solid #777;
-  border-radius: 30px;
+  border-radius: 20px;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
+
 
 /* ========================= Section-footer =============================*/
 .section-footer {
@@ -372,7 +373,7 @@ a.services-back-button {
   color: #fff;
   max-width: 1200px;
   /* height: 80px; */
-  margin: 0 auto;
+  margin: 3px auto;
    /* padding: 4rem 0; */
 }
 
@@ -476,7 +477,7 @@ a.services-back-button {
   
   .section-b h1 {
     font-size: 2.3rem;
-  }
+    padding-top: 110px;  }
 
   .section-b img {
     display: none;
@@ -537,18 +538,16 @@ a.services-back-button {
   height: 280px; 
 }
 
-
-  /* ============================================ */
   /* Utilities (utility classes)- ne flam tot in @media 992px!!!*/
   .btn {
     display: inline-block;
     /* background: var(--primary-color); */
     color: rgb(255, 255, 255);
-    padding: 0.8rem 1.5rem;
+    padding: 0.2rem 0.5rem;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 30px;
+    font-size: 1rem;
+    border-radius: 20px;
   }
   
   .btn:hover {
@@ -583,10 +582,16 @@ a.services-back-button {
   .Navbar {
     align-items:flex-start;
   }
-
+  
   .Navbar__Items {
     display:none;
   }
+
+  /*For WDS solution, see extern.js*/
+  .Navbar__Items.active {
+    display:flex;
+  }
+
 
   .Navbar__Items--right {
     margin-left: 0;
@@ -618,7 +623,22 @@ a.services-back-button {
 
   .section-a-inner {
     padding: 2rem 0;
-    height: 60%;
+    /* height: 60%; */
+  }
+
+  .section-a-inner h3 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-top: 0.2rem;
+    padding: 1rem 0;
+  }
+
+  .section-a-inner h2 {
+    display: none;
+  }
+  
+  .section-a-inner p { 
+    display: none;
   }
 
   .section-c .row {

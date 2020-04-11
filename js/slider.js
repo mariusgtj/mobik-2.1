@@ -1,3 +1,4 @@
+// Fisierul slider.js se refera doar la imaginile din fiecare clasa: cls1 - cls6
 let slideClassName;
 function reply_click(clicked_id) {
   console.log("Btn clicked!");
@@ -26,7 +27,7 @@ function reply_click(clicked_id) {
 
   if (document.querySelector('div.wrap').style.display = 'none') {
     document.querySelector('div.wrap').style.display = "block";
-}
+  }
   console.log("Am deschis div ul wrap");
 
 
@@ -36,12 +37,12 @@ function reply_click(clicked_id) {
 
 // Declar variabilele (situatia in care am mai multe clase de poze):
 let sliderImages,
-arrowLeft,
-arrowRight,
-current;
+    arrowLeft,
+    arrowRight,
+    current;
 
-// Init slider
-// Mai intai verific daca exista sliderImages:
+// Definesc fc initSlider()
+// Mai intai verific daca exista sliderImages. Daca da, atunci inchid acea poza. De asemenea, pun pe NULL celelalte variabile.
 function initSlider () {
   if (sliderImages) {
     sliderImages[current].style.display = 'none';
@@ -56,7 +57,7 @@ function initSlider () {
   console.log(sliderImages)
       // Explicatie:
           // Obtin un arr(?!) cu foto din clasa selectata, dupa care 
-          // stabilesc indexul celei pe care doresc sa o afisez 
+          // stabilesc indexul celei pe care doresc sa o afisez, current=0; 
 
   arrowLeft = document.querySelector("#arrow-left");
   console.log("Arrow-left selected!");
@@ -101,7 +102,7 @@ function arrowLeftClickHandler() {
   if (current === 0) {
       current = sliderImages.length;
     }
-    slideLeft();
+    slideLeft(); // scad current cu 1 unitate
 }
 
 // Setez CURRENT daca ma aflu la sfarsitul listei de img, adica index=arr.length-1
@@ -109,7 +110,7 @@ function arrowRightClickHandler() {
   if (current === sliderImages.length - 1) {
       current = -1;
     }
-  slideRight();
+  slideRight(); // cresc current cu 1 unitate
 }
 
 // Show prev
